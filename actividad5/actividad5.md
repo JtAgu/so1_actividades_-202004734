@@ -32,40 +32,41 @@ El kernel es un componente esencial en los sistemas operativos, funcionando como
 
 * **Kernel Mode**
 
-**Descripción:** En este modo, el código tiene acceso completo a todo el hardware y puede ejecutar cualquier instrucción en la CPU. Este modo es usado por el núcleo del sistema operativo (kernel) y algunos controladores de dispositivo.
+    * **Descripción:** En este modo, el código tiene acceso completo a todo el hardware y puede ejecutar cualquier instrucción en la CPU. Este modo es usado por el núcleo del sistema operativo (kernel) y algunos controladores de dispositivo.
 
-**Ventajas:** Permite al sistema operativo controlar todos los aspectos del hardware, lo que es crucial para la gestión de recursos y la seguridad.
+    * **Ventajas:** Permite al sistema operativo controlar todos los aspectos del hardware, lo que es crucial para la gestión de recursos y la seguridad.
 
-**Desventajas:** Si ocurre un fallo en el modo kernel, puede comprometer la estabilidad del sistema entero.
+    * **Desventajas:** Si ocurre un fallo en el modo kernel, puede comprometer la estabilidad del sistema entero.
 
 * **User Mode**
  
-**Descripción:** En este modo, las aplicaciones y algunos servicios del sistema operativo se ejecutan con privilegios limitados. No tienen acceso directo al hardware ni pueden ejecutar instrucciones críticas para el sistema.
+    * **Descripción:** En este modo, las aplicaciones y algunos servicios del sistema operativo se ejecutan con privilegios limitados. No tienen acceso directo al hardware ni pueden ejecutar instrucciones críticas para el sistema.
  
-**Ventajas:** Protege al sistema operativo y otros programas de errores en las aplicaciones de usuario, mejorando la estabilidad del sistema.
+    * **Ventajas:** Protege al sistema operativo y otros programas de errores en las aplicaciones de usuario, mejorando la estabilidad del sistema.
 
-**Desventajas:** Menor flexibilidad para las aplicaciones, ya que deben solicitar servicios al kernel para acceder a recursos críticos.
+    * **Desventajas:** Menor flexibilidad para las aplicaciones, ya que deben solicitar servicios al kernel para acceder a recursos críticos.
 
 
 ## **Interruptions vs Traps**
 
 **Interrupciones**
 
-Descripción: Son señales enviadas por hardware o software al procesador para notificar que un evento necesita ser atendido. Las interrupciones permiten al procesador dejar temporalmente la ejecución de su tarea actual para responder al evento, y luego retomar la tarea donde la dejó.
+    * Descripción: Son señales enviadas por hardware o software al procesador para notificar que un evento necesita ser atendido. Las interrupciones permiten al procesador dejar temporalmente la ejecución de su tarea actual para responder al evento, y luego retomar la tarea donde la dejó.
 
-Tipos:
-Hardware Interruptions: Provocadas por dispositivos hardware, como un teclado o una tarjeta de red.
-Software Interruptions: Provocadas por el software, como llamadas al sistema o excepciones.
+    * Tipos:
+        * Hardware Interruptions: Provocadas por dispositivos hardware, como un teclado o una tarjeta de red.
+        * Software Interruptions: Provocadas por el software, como llamadas al sistema o excepciones.
 
-**Traps**
+* **Traps**
 
-Descripción: Una trampa es un tipo específico de interrupción que es generada por el procesador cuando una operación no permitida o una condición excepcional ocurre durante la ejecución de un programa. Las trampas se utilizan típicamente para manejar errores o para realizar llamadas al sistema.
+    * Descripción: Una trampa es un tipo específico de interrupción que es generada por el procesador cuando una operación no permitida o una condición excepcional ocurre durante la ejecución de un programa. Las trampas se utilizan típicamente para manejar errores o para realizar llamadas al sistema.
 
-Diferencia Clave: Mientras que las interrupciones suelen ser asíncronas (pueden ocurrir en cualquier momento), las trampas son sincrónicas, ya que ocurren como resultado directo de la ejecución de una instrucción específica.
+    * Diferencia Clave: Mientras que las interrupciones suelen ser asíncronas (pueden ocurrir en cualquier momento), las trampas son sincrónicas, ya que ocurren como resultado directo de la ejecución de una instrucción específica.
+
 
 Estas diferencias son fundamentales para la arquitectura de sistemas operativos y la forma en que los procesos interactúan con el hardware y el kernel.
 
 
 ## REFERENCIAS
-[KERNEL - EDUCA OPEN](https://www.educaopen.com/digital-lab/metaterminos/k/kernel)
-[Trap vs Interrupt in OS - EDUCBA](https://www.educba.com/trap-vs-interrupt-in-operating-system/)
+* [KERNEL - EDUCA OPEN](https://www.educaopen.com/digital-lab/metaterminos/k/kernel)
+* [Trap vs Interrupt in OS - EDUCBA](https://www.educba.com/trap-vs-interrupt-in-operating-system/)
