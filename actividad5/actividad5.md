@@ -49,7 +49,7 @@ El kernel es un componente esencial en los sistemas operativos, funcionando como
 
 ## **Interruptions vs Traps**
 
-**Interrupciones**
+* **Interrupciones**
 
     * Descripción: Son señales enviadas por hardware o software al procesador para notificar que un evento necesita ser atendido. Las interrupciones permiten al procesador dejar temporalmente la ejecución de su tarea actual para responder al evento, y luego retomar la tarea donde la dejó.
 
